@@ -1,6 +1,7 @@
+
 body{
     font-family: Arial, sans-serif;
-    background-color: rgb(233, 233, 233);
+    background-color: #fafafa;
 }
 nav{
     background-color: rgb(191, 0, 255);
@@ -122,8 +123,8 @@ ul .last-item{
     background-color: #ffffff;
     border: none;
     border-left:1px solid grey;
-    height: 120px;
-    width: 150px;
+    height: 130px;
+    width: 160px;
 }
 .mb-btn button>img{
     height: 70px;
@@ -133,7 +134,10 @@ ul .last-item{
     background-color:  rgb(191, 0, 255);
     color: white;
     padding: 10px;
-    width: 130px;
+    width: 150px;
+    height: 150px;
+    margin: -10px;
+    border: none;
    
 }
 .mb-track{
@@ -147,6 +151,7 @@ ul .last-item{
     padding: 0px 10px 0px;
     height: 70px;
     width: 450px;
+    border: none;
 }
 .t-btn2{
     background-color:#ff6200;
@@ -166,8 +171,132 @@ ul .last-item{
     display: flex;
     justify-content: center;
 }
+#middleline{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    border-bottom: 1px solid rgb(191, 0, 255);
+    padding-bottom: 2%;
+    color: #272727;
+}
+.smallbusiness{
+  margin: 0%  15%;
+  height: 350px;
+  width: 1000px;
+  
+  
+}
+.smallb-h{
+    font-size: 36pt;
+    font-weight: 400;
+    text-align: left;
+    width: 50%;
+    line-height: 1.0;
+}
+.smallb-p{
+    color: #4c4c4c;
+    margin-top: -2%;
+    font-size: 19pt;
+    font-weight: 100;  
+    width: 45%;
+}
+.smallb-btn{
+     background-color: transparent;
+     padding: 15px 30px;
+     border: 2px solid #007ab7;
+     border-radius: 40px;
+     color: #007ab7;
+     font-size: 12pt;
+     font-weight: bold;
+     cursor: pointer;
+}
+.smallb-btn:active{
+    background-color: #007ab7;
+    color: #fafafa;
+}
+.smallb-img{
+    float: right;
+    margin-right: 10%;
+    margin-top: -30%;
+    height: 300px;
+    width: 350px;
+}
+.links>h3{
+    text-align: center;
+    font-size: 36pt;
+    font-weight: 100;
+    color: #444444;
+    letter-spacing:  .1em;
+}
 
+.links>ul{
+    list-style: none;
+    display: inline-flex;
+}
+.links>ul>li{
+   margin-left: 12%;
+  
+}
+.links>ul>li>p{
+    font-size: 15pt;
+    text-transform: uppercase;
+}
+.trophy{
+    margin: 10% 10%;
+    text-align: left;
+}
+.logo2{
+    height: 40px;
+    width: 100px;
+}
+.trophy>h3{
+    font-size: 20pt;
+    width: 50%;
+}
+.trophy>p{
+    width: 50%;
+    font-size: 18pt;
+}
+.trophy> .trophy-p{
+    float: right;
+    margin-top: -20%;
+}
+.trophy>a{
+    text-decoration: none;
+    font-size: 18pt;
+    color:rgb(69, 69, 230);
+}
+.trophy>a:hover{
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.container>.sb-grant>img ,  .container>.miracle>img{
+    width: 700px;
+}
+.container>.sb-grant>h3 ,  .container>.miracle>h3{
+       width: 50%;
+       font-size: 20pt;
+}
+.container>.sb-grant>p , .container>.miracle>p{
+     font-size: 18pt;
+}
+.container>.sb-grant>a , .container>.miracle>a{
+    font-size: 18pt;
+    text-decoration: none;
+    color: #007ab7;
+    font-weight: 600;
+}
+.container>.sb-grant>a:hover , .container>.miracle>a:hover{
+    text-decoration: underline;
+}
 
+.sb-grant, .miracle{
+    margin-left: 5%;
+
+}
 
 hr{
     width: 80%;
@@ -245,6 +374,44 @@ hr{
 .last-footer ul{
     float: right;
 }
+.nonprofit{
+    background-image: url(./images/products-fedex-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    margin-left: 22%;
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    width: 25%;
+    background-color: #fafafaac;
+    padding: 15px;
+}
+
+.text>h6{
+    font-weight: 100;
+    font-size: 20pt;
+    margin: 15px;
+}
+.text>p{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    max-width: inherit;
+   
+}
+.text>button{
+    color:#0a5377;
+    border:3px solid #0a5377;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: transparent;
+}
+.text>button:active{
+   background-color: #0a5377;
+   color: white;
+   border:4px solid #fafafa;
+}
 
 @media screen and (max-width:480px) {
     nav .bscreen, nav .login-t, .search{
@@ -263,6 +430,18 @@ hr{
     nav ul{
         margin-left: 0%;
     }
+    .mb-track{
+       
+        margin: 0% 20%;  
+        flex-flow: column;
+    }
+    .t-btn2, .track2{
+        width: 250px;
+    }
+    .links>ul{
+        display: block;
+    }
+    
  }
        
 @media screen and (min-width: 601px) and (max-width:1024px) {
@@ -277,7 +456,14 @@ hr{
         display: block;
         float: right;
     }
-    
+    .mb-track{
+        margin: 0 20% 0% 15%;
+    }
+    .links>ul{
+        display: block;
+    }
+
+   
 
 }
 
@@ -297,5 +483,12 @@ hr{
          margin: 0% 10%;
         
     }
-    
+    .mb-track{
+        margin: 0% 2% 0% 5%;
+        flex-flow: column;
+    }
+    .links>ul{
+        display: block;
+    }
+
 }
